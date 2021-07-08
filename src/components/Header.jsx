@@ -1,12 +1,15 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 function Header() {
-    return <nav className='#7e57c2 deep-purple lighten-1'>
+    return <nav className='#ffd54f amber lighten-2'>
         <div className="nav-wrapper">
-            <a href="#!" className="brand-logo"><i className="material-icons"> </i>Find Movie</a>
+            <a href="/" className="brand-logo"><i className="material-icons"> </i>What did my wife cook?</a>
             <ul className="right hide-on-med-and-down">
-                <li><a href="https://github.com/AstakhovV"><i className="material-icons" alt='https://github.com/AstakhovV'>person</i></a></li>
-                GitHub
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contacts">Contacts</Link></li>
+
             </ul>
         </div>
     </nav>
