@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/What-will-my-wife-cook/static/css/main.f3abe52e.chunk.css",
+    "main.js": "/What-will-my-wife-cook/static/js/main.27413efd.chunk.js",
+    "main.js.map": "/What-will-my-wife-cook/static/js/main.27413efd.chunk.js.map",
+    "runtime-main.js": "/What-will-my-wife-cook/static/js/runtime-main.675bb603.js",
+    "runtime-main.js.map": "/What-will-my-wife-cook/static/js/runtime-main.675bb603.js.map",
+    "static/js/2.b82d83ad.chunk.js": "/What-will-my-wife-cook/static/js/2.b82d83ad.chunk.js",
+    "static/js/2.b82d83ad.chunk.js.map": "/What-will-my-wife-cook/static/js/2.b82d83ad.chunk.js.map",
+    "index.html": "/What-will-my-wife-cook/index.html",
+    "static/css/main.f3abe52e.chunk.css.map": "/What-will-my-wife-cook/static/css/main.f3abe52e.chunk.css.map",
+    "static/js/2.b82d83ad.chunk.js.LICENSE.txt": "/What-will-my-wife-cook/static/js/2.b82d83ad.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.675bb603.js",
+    "static/js/2.b82d83ad.chunk.js",
+    "static/css/main.f3abe52e.chunk.css",
+    "static/js/main.27413efd.chunk.js"
+  ]
+}
