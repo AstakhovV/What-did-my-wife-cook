@@ -14,7 +14,7 @@ import CountryMealList from "./pages/CountryMealList";
 function App() {
     return (
         <>
-            <Router basename='/What-did-my-wife-cook'>
+            <Router basename='/What-will-my-wife-cook'>
                 <Header/>
                 <main className="container content">
                     <Switch>
