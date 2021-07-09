@@ -10,6 +10,7 @@ function Search({cb = Function.prototype}) {
     }
     const handleSubmit = () => {
         cb(value)
+        setValue('')
     }
 
     return <div className="row">

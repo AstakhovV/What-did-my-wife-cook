@@ -6,56 +6,59 @@ function RecipeItem (props){
 
 
     return (
-        <div className="card">
-            <div className="card-image">
-                <img src={strMealThumb} alt={strMeal}/>
-            </div>
-            <div className="card-content">
-                <span className="card-title "><b>{strMeal}</b></span>
-                <p>Category: {strCategory}</p>
-                {
-                    strArea ? <p >Area: {strArea}</p> : null
-                }
-                <p>{strInstructions}</p>
-                <table className='striped centered'>
-                    <thead>
-                    <tr>
-                        <th>Ingredient</th>
-                        <th>Measure</th>
-                    </tr>
-                    </thead>
-
-                    <tbody>
-                    {
-                        Object.keys(props.recipe).map(key => {
-                            if (key.includes('Ingredient') && props.recipe[key]) {
-                                return (
-                                    <tr key={key}>
-                                        <td>{props.recipe[key]}</td>
-                                        <td>{
-                                            props.recipe[`strMeasure${key.slice(13)}`]
-                                        }</td>
-                                    </tr>
-                                )
+        <div className="card ">
+                <h2 className="header center-align">{strMeal}</h2>
+                    <div className="card-image center-content">
+                        <img className="card-meal-item" src={strMealThumb} alt={strMeal}/>
+                    </div>
+                    <div className="card-stacked ">
+                        <div className="card-content">
+                            <p>Category: {strCategory}</p>
+                            {
+                                strArea ? <p >Area: {strArea}</p> : null
                             }
-                            return null
-                        })
-                    }
-                    </tbody>
-                </table>
+                            <p>{strInstructions}</p>
+                        </div>
+                        <div>
+                            <table className='highlight responsive-table centered'>
+                                <thead>
+                                <tr>
+                                    <th>Ingredient</th>
+                                    <th>Measure</th>
+                                </tr>
+                                </thead>
 
-                {
-                    strYoutube ?
-                        (<div className="row">
-                            <h5 style={{margin: '2rem 0 1.5rem'}}>Video Recipe</h5>
-                            <iframe title={props.id}
-                                    allowFullScreen
-                                    src={`https://www.youtube.com/embed/${strYoutube.slice(-11)}`}
-                                    frameBorder="0"/>
-                        </div>)
-                        : null
-                }
-            </div>
+                                <tbody>
+                                {
+                                    Object.keys(props.recipe).map(key => {
+                                        if (key.includes('Ingredient') && props.recipe[key]) {
+                                            return (
+                                                <tr key={key}>
+                                                    <td>{props.recipe[key]}</td>
+                                                    <td>{
+                                                        props.recipe[`strMeasure${key.slice(13)}`]
+                                                    }</td>
+                                                </tr>
+                                            )
+                                        }
+                                        return null
+                                    })
+                                }
+                                </tbody>
+                            </table>
+                        </div>
+                        {
+                            strYoutube ?
+                                (<div className="row center-align">
+                                    <h5 style={{margin: '2rem 0 1.5rem'}}>Video Recipe</h5>
+                                    <iframe title={props.id}
+                                            allowFullScreen
+                                            src={`https://www.youtube.com/embed/${strYoutube.slice(-11)}`}
+                                            frameBorder="0"/>
+                                </div>)
+                                : null
+                        }
+                    </div>
         </div>
     )
 }

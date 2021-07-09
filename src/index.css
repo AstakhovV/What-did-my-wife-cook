@@ -45,3 +45,15 @@ iframe {
   top: 0;
   right: 0;
 }
+.card-item{
+  padding: 1rem;
+}
+.card-meal-item{
+  padding: 20px;
+  max-height: 40%;
+  max-width: 40%;
+}
+.center-content{
+  display: inline-flex;
+  justify-content: center;
+}

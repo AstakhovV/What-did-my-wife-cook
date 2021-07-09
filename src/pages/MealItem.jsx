@@ -5,9 +5,9 @@ function MealItem (props){
     const {strMeal, strMealThumb, idMeal} = props
     return (
         <>
-            <div className="card">
+            <div className="card hoverable">
                 <div className="card-image">
-                    <img src={strMealThumb} alt={strMeal}/>
+                    <img  src={strMealThumb} alt={strMeal}/>
                 </div>
                 <div className="card-content">
                     <span className="card-title ">{strMeal}</span>
