@@ -24,6 +24,7 @@ function RandomMeal (props){
                         <thead>
                         <tr>
                             <th>Ingredient</th>
+                            <th>Picture</th>
                             <th>Measure</th>
                         </tr>
                         </thead>
@@ -35,6 +36,9 @@ function RandomMeal (props){
                                     return (
                                         <tr key={key}>
                                             <td>{props.randomMeal[key]}</td>
+                                            <td>
+                                                <img className='ing-image' src={`https://www.themealdb.com/images/ingredients/${props.randomMeal[key]}-Small.png`} alt={props.randomMeal[key]}/>
+                                            </td>
                                             <td>{
                                                 props.randomMeal[`strMeasure${key.slice(13)}`]
                                             }</td>
