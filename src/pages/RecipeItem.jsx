@@ -24,6 +24,7 @@ function RecipeItem (props){
                                 <thead>
                                 <tr>
                                     <th>Ingredient</th>
+                                    <th>Picture</th>
                                     <th>Measure</th>
                                 </tr>
                                 </thead>
@@ -34,7 +35,11 @@ function RecipeItem (props){
                                         if (key.includes('Ingredient') && props.recipe[key]) {
                                             return (
                                                 <tr key={key}>
-                                                    <td>{props.recipe[key]}</td>
+                                                    <td>
+                                                        {props.recipe[key]}</td>
+                                                    <td>
+                                                        <img className='ing-image' src={`https://www.themealdb.com/images/ingredients/${props.recipe[key]}-Small.png`} alt={props.recipe[key]}/>
+                                                    </td>
                                                     <td>{
                                                         props.recipe[`strMeasure${key.slice(13)}`]
                                                     }</td>

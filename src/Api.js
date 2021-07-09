@@ -20,5 +20,15 @@ const getRandomMeal = async () => {
     return await response.json()
 }
 
+const getAllCountry = async () => {
+    const response = await fetch(API_URL + 'list.php?a=list')
+    return await response.json()
+}
 
-export {getRandomMeal, getMealById, getAllCategories, getFilteredCategory}
+const getFilteredArea = async (areaName) => {
+    const response = await fetch(API_URL + 'filter.php?a=' + areaName )
+    return await response.json()
+}
+
+
+export {getFilteredArea, getAllCountry, getRandomMeal, getMealById, getAllCategories, getFilteredCategory}

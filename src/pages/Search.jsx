@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 
+
 function Search({cb = Function.prototype}) {
     const [value, setValue] = useState('')
 
