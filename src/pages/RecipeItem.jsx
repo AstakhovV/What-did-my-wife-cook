@@ -1,8 +1,8 @@
 import React from 'react'
 
-function RecipeItem (props){
+function RecipeItem ({item}){
     const { strMeal, strCategory, strArea,
-        strInstructions, strMealThumb, strYoutube} = props.recipe
+        strInstructions, strMealThumb, strYoutube} = item
 
 
     return (
@@ -31,17 +31,17 @@ function RecipeItem (props){
 
                                 <tbody>
                                 {
-                                    Object.keys(props.recipe).map(key => {
-                                        if (key.includes('Ingredient') && props.recipe[key]) {
+                                    Object.keys(item).map(key => {
+                                        if (key.includes('Ingredient') && item[key]) {
                                             return (
                                                 <tr key={key}>
                                                     <td>
-                                                        {props.recipe[key]}</td>
+                                                        {item[key]}</td>
                                                     <td>
-                                                        <img className='ing-image' src={`https://www.themealdb.com/images/ingredients/${props.recipe[key]}-Small.png`} alt={props.recipe[key]}/>
+                                                        <img className='ing-image' src={`https://www.themealdb.com/images/ingredients/${item[key]}-Small.png`} alt={item[key]}/>
                                                     </td>
                                                     <td>{
-                                                        props.recipe[`strMeasure${key.slice(13)}`]
+                                                        item[`strMeasure${key.slice(13)}`]
                                                     }</td>
                                                 </tr>
                                             )
@@ -56,7 +56,7 @@ function RecipeItem (props){
                             strYoutube ?
                                 (<div className="row center-align">
                                     <h5 style={{margin: '2rem 0 1.5rem'}}>Video Recipe</h5>
-                                    <iframe title={props.id}
+                                    <iframe title={item.id}
                                             allowFullScreen
                                             src={`https://www.youtube.com/embed/${strYoutube.slice(-11)}`}
                                             frameBorder="0"/>

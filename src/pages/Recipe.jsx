@@ -20,7 +20,7 @@ function Recipe() {
         <button className='btn' onClick={goBack}>Go Back</button>
         {!recipe.idMeal ?
             <Preloader/> :
-            <RecipeItem recipe={recipe} id={id}/>
+            <RecipeItem item={recipe} id={id}/>
         }
     </>
 }

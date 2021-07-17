@@ -31,7 +31,7 @@ function Category() {
                 )
             }
         )
-    }, [search])
+    }, [search, name])
 
     return <>
         <Search cb={handleSearch}/>

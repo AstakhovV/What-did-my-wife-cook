@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {useHistory} from "react-router-dom";
 import {Preloader} from "../components/Preloader";
 import {getRandomMeal} from "../Api";
-import RandomMeal from "./RandomMeal";
+import RecipeItem from "./RecipeItem";
 
 function Random() {
 
@@ -25,7 +25,7 @@ function Random() {
         <button className='btn right' onClick={handleRandomMeal}>Get Random</button>
         {!randomMeal.idMeal ?
             <Preloader/>
-            : <RandomMeal randomMeal={randomMeal}/>
+            : <RecipeItem item={randomMeal}/>
         }
 
     </>
