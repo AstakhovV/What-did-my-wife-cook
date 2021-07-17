@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/What-will-my-wife-cook/static/css/main.f3abe52e.chunk.css",
-    "main.js": "/What-will-my-wife-cook/static/js/main.162ab583.chunk.js",
-    "main.js.map": "/What-will-my-wife-cook/static/js/main.162ab583.chunk.js.map",
+    "main.js": "/What-will-my-wife-cook/static/js/main.8164fd03.chunk.js",
+    "main.js.map": "/What-will-my-wife-cook/static/js/main.8164fd03.chunk.js.map",
     "runtime-main.js": "/What-will-my-wife-cook/static/js/runtime-main.675bb603.js",
     "runtime-main.js.map": "/What-will-my-wife-cook/static/js/runtime-main.675bb603.js.map",
     "static/js/2.b82d83ad.chunk.js": "/What-will-my-wife-cook/static/js/2.b82d83ad.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.675bb603.js",
     "static/js/2.b82d83ad.chunk.js",
     "static/css/main.f3abe52e.chunk.css",
-    "static/js/main.162ab583.chunk.js"
+    "static/js/main.8164fd03.chunk.js"
   ]
 }
